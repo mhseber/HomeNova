@@ -1,10 +1,12 @@
+import Banner from "./Pages/Banner";
+
 
 
 export default function Home() {
   return (
     <div>
-      <h1 >Hello NextJs</h1>
-      
+     
+      <Banner></Banner>
     </div>
   );
 }

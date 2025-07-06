@@ -1,26 +1,28 @@
+import Link from "next/link";
+
 const Navbar = () => {
   const NavOptions = (
     <>
       <li>
-        <a>Classic Furniture</a>
+        <Link href={"/"}>Home</Link>
       </li>
       <li>
-        <a>Modern Furniture</a>
+        <Link href={"/cFurniture"}>Classic Furniture</Link>
       </li>
       <li>
-        <a>Classic Lighting</a>
+        <Link href={"/mFurniture"}>Modern Furniture</Link>
       </li>
       <li>
-        <a>Modern Lighting</a>
+        <Link href={"/cLighting"}>Classic Lighting</Link>
       </li>
       <li>
-        <a>Decor</a>
+        <Link href={"/mLighting"}>Modern Lighting</Link>
       </li>
       <li>
-        <a>Projects</a>
+        <Link href={"/decor"}>Decor</Link>
       </li>
       <li>
-        <a>Contact</a>
+        <Link href={"/contact"}>Contact</Link>
       </li>
     </>
   );
