@@ -3,25 +3,25 @@ import Image from "next/image";
 const Navbar = () => {
   const NavOptions = (
     <>
-      <li>
+      <li className="transition duration-200 hover:underline hover:decoration-purple-500 hover:underline-offset-4">
         <Link href={"/"}>Home</Link>
       </li>
-      <li>
+      <li className="transition duration-200 hover:underline hover:decoration-purple-500 hover:underline-offset-4">
         <Link href={"/cFurniture"}>Classic Furniture</Link>
       </li>
-      <li>
+      <li className="transition duration-200 hover:underline hover:decoration-purple-500 hover:underline-offset-4">
         <Link href={"/mFurniture"}>Modern Furniture</Link>
       </li>
-      <li>
+      <li className="transition duration-200 hover:underline hover:decoration-purple-500 hover:underline-offset-4">
         <Link href={"/cLighting"}>Classic Lighting</Link>
       </li>
-      <li>
+      <li className="transition duration-200 hover:underline hover:decoration-purple-500 hover:underline-offset-4">
         <Link href={"/mLighting"}>Modern Lighting</Link>
       </li>
-      <li>
+      <li className="transition duration-200 hover:underline hover:decoration-purple-500 hover:underline-offset-4">
         <Link href={"/decor"}>Decor</Link>
       </li>
-      <li>
+      <li className="transition duration-200 hover:underline hover:decoration-purple-500 hover:underline-offset-4">
         <Link href={"/contact"}>Contact</Link>
       </li>
     </>
@@ -55,14 +55,16 @@ const Navbar = () => {
               {NavOptions}
             </ul>
           </div>
-          <div>
+          <div className="w-16 h-16 ml-8 overflow-hidden rounded-full">
             <Image src="/assets/logo.png" alt="logo" width={120} height={40} />
           </div>
         </div>
         <div className="hidden navbar-center lg:flex">
-          <ul className="px-1 menu menu-horizontal">{NavOptions}</ul>
+          <ul className="flex px-1 space-x-6 text-xl font-medium ">
+            {NavOptions}
+          </ul>
         </div>
-        <div className="navbar-end">
+        <div className="pr-16 navbar-end ">
           <a className="btn">Login</a>
         </div>
       </div>
