@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import Image from "next/image";
 const Navbar = () => {
   const NavOptions = (
     <>
@@ -28,7 +28,7 @@ const Navbar = () => {
   );
   return (
     <div>
-      <div className="fixed z-10 p-10 text-black shadow-lg bg-opacity-30 backdrop-blur-md navbar bg-base-100">
+      <div className="fixed z-10 p-5 text-black shadow-lg bg-opacity-30 backdrop-blur-md navbar bg-base-100">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -55,7 +55,9 @@ const Navbar = () => {
               {NavOptions}
             </ul>
           </div>
-          <a className="text-xl">HomeNova</a>
+          <div>
+            <Image src="/assets/logo.png" alt="logo" width={120} height={40} />
+          </div>
         </div>
         <div className="hidden navbar-center lg:flex">
           <ul className="px-1 menu menu-horizontal">{NavOptions}</ul>
