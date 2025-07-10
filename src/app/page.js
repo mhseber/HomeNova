@@ -1,4 +1,5 @@
 import Banner from "./Pages/Banner";
+import Video from "./Pages/Video";
 
 
 
@@ -7,6 +8,7 @@ export default function Home() {
     <div>
      
       <Banner></Banner>
+      <Video></Video>
     </div>
   );
 }
