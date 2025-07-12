@@ -18,7 +18,6 @@ const Banner = () => {
   return (
     <div className="relative h-[600px] overflow-hidden">
       {/* HomeNova site name overlay */}
-
       <Carousel
         showThumbs={false}
         autoPlay
