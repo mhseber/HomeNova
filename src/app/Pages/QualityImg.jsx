@@ -9,13 +9,13 @@ import q6 from "../../../public/assets/q6.jpg";
 const QualityImg = () => {
   return (
     <div>
-      <section className="pt-10 flex w-[225px]">
-        <Image src={q1}></Image>
-        <Image src={q2}></Image>
-        <Image src={q3}></Image>
-        <Image src={q4}></Image>
-        <Image src={q5}></Image>
-        <Image src={q6}></Image>
+      <section className="pt-10 grid grid-cols-2 md:grid-cols-3 lg:flex  w-full lg:w-[225px]">
+        <Image src={q1} alt="q1" />
+        <Image src={q2} alt="q2" />
+        <Image src={q3} alt="q3" />
+        <Image src={q4} alt="q4" />
+        <Image src={q5} alt="q5" />
+        <Image src={q6} alt="q6" />
       </section>
     </div>
   );
