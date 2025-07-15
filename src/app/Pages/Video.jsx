@@ -8,7 +8,7 @@ import { MdOutlineRoundaboutRight } from "react-icons/md";
 const Video = () => {
   return (
     <div className="p-5 sm:p-10">
-      <div className="mt-10  bg-[#c3c9db] shadow-2xl  rounded-xl">
+      <div className="mt-10  bg-[#ebedf4] shadow-2xl  rounded-xl">
         {/* Video + Form section */}
         <div className="flex flex-col-reverse items-center justify-between gap-10 p-5 lg:flex-row">
           {/* Form */}

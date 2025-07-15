@@ -10,7 +10,7 @@ import { BsCalendar2CheckFill } from "react-icons/bs";
 const HowTo = () => {
   return (
     <div className="flex justify-center mt-10">
-      <div className="bg-[#c3c9db] shadow-2xl rounded-xl p-8 w-full max-w-6xl text-center">
+      <div className="bg-[#ebedf4] shadow-2xl rounded-xl p-8 w-full max-w-6xl text-center">
         <h1 className="mb-8 text-3xl font-light">HOW TO BUY?</h1>
         <section className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6">
           <div className="flex flex-col items-center">
