@@ -12,7 +12,7 @@ const Footer = () => {
           {/* name+logo */}
           <div className="flex items-center gap-4 ">
             <Image
-              className="border-2 border-gray-300 border-dotted rounded-full "
+              className="border-2 border-gray-300 border-dashed rounded-full "
               width={60}
               height={60}
               src={logo}
