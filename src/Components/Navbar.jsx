@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { FaCartShopping } from "react-icons/fa6";
 import { FaHeart } from "react-icons/fa";
+import { AiOutlineUser } from "react-icons/ai";
 
 const Navbar = () => {
   const NavOptions = (
@@ -97,7 +98,9 @@ const Navbar = () => {
             </div>
 
             {/* Login Button */}
-            <a className="btn btn-sm">Login</a>
+            <a className="btn btn-sm">
+              <AiOutlineUser />
+            </a>
           </div>
         </div>
       </div>
