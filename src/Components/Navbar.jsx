@@ -1,31 +1,52 @@
 import Link from "next/link";
 import Image from "next/image";
+import { FaCartShopping } from "react-icons/fa6";
+import { FaHeart } from "react-icons/fa";
+
 const Navbar = () => {
   const NavOptions = (
     <>
       <li className="transition duration-200 hover:underline hover:decoration-purple-500 hover:underline-offset-4">
         <Link href={"/"}>Home</Link>
       </li>
-      <li className="transition duration-200 hover:underline hover:decoration-purple-500 hover:underline-offset-4">
-        <Link href={"/cFurniture"}>Classic Furniture</Link>
+
+      {/* Dropdown Start */}
+      <li className="dropdown dropdown-hover">
+        <div
+          tabIndex={0}
+          role="button"
+          className="transition duration-200 hover:underline hover:decoration-purple-500 hover:underline-offset-4"
+        >
+          Décor & Comfort
+        </div>
+        <ul
+          tabIndex={0}
+          className="z-10 p-2 shadow-md dropdown-content menu bg-base-100 rounded-box w-52"
+        >
+          <li>
+            <Link href={"/cFurniture"}>Classic Furniture</Link>
+          </li>
+          <li>
+            <Link href={"/mFurniture"}>Modern Furniture</Link>
+          </li>
+          <li>
+            <Link href={"/cLighting"}>Classic Lighting</Link>
+          </li>
+          <li>
+            <Link href={"/mLighting"}>Modern Lighting</Link>
+          </li>
+          <li>
+            <Link href={"/decor"}>Decor</Link>
+          </li>
+        </ul>
       </li>
-      <li className="transition duration-200 hover:underline hover:decoration-purple-500 hover:underline-offset-4">
-        <Link href={"/mFurniture"}>Modern Furniture</Link>
-      </li>
-      <li className="transition duration-200 hover:underline hover:decoration-purple-500 hover:underline-offset-4">
-        <Link href={"/cLighting"}>Classic Lighting</Link>
-      </li>
-      <li className="transition duration-200 hover:underline hover:decoration-purple-500 hover:underline-offset-4">
-        <Link href={"/mLighting"}>Modern Lighting</Link>
-      </li>
-      <li className="transition duration-200 hover:underline hover:decoration-purple-500 hover:underline-offset-4">
-        <Link href={"/decor"}>Decor</Link>
-      </li>
+      {/* Dropdown End */}
       <li className="transition duration-200 hover:underline hover:decoration-purple-500 hover:underline-offset-4">
         <Link href={"/contact"}>Contact</Link>
       </li>
     </>
   );
+
   return (
     <div>
       <div className="fixed z-10 p-5 text-black shadow-lg bg-opacity-30 backdrop-blur-md navbar bg-base-100">
@@ -64,8 +85,20 @@ const Navbar = () => {
             {NavOptions}
           </ul>
         </div>
-        <div className="pr-16 navbar-end ">
-          <a className="btn">Login</a>
+
+        {/* Navbar End */}
+        <div className="pr-8 navbar-end">
+          {/* Icons + Login aligned */}
+          <div className="flex items-center gap-6">
+            {/* Cart & Wishlist */}
+            <div className="flex items-center gap-4 text-xl">
+              <FaCartShopping className="transition cursor-pointer hover:text-purple-500" />
+              <FaHeart className="transition cursor-pointer hover:text-purple-500" />
+            </div>
+
+            {/* Login Button */}
+            <a className="btn btn-sm">Login</a>
+          </div>
         </div>
       </div>
     </div>
